@@ -61,7 +61,9 @@
 		>
 			<MessageCircleCode class="h-6 w-6 text-text" />
 		</a>
-		<span class="text-sm font-medium text-text transition-all">~/al-aqua/{activePage}</span>
+		<span class="text-sm font-medium text-text transition-all"
+			><span class="hidden md:inline">~/al-aqua</span>/{activePage}</span
+		>
 	</nav>
 
 	<section
