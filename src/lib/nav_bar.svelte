@@ -12,7 +12,10 @@
 	let activePage = 'home';
 </script>
 
-<header class="sticky flex items-center justify-center p-6 md:justify-between">
+<header
+	class="sticky top-0 z-50 flex items-center justify-center p-6
+	md:justify-between"
+>
 	<!--TODO: add the right href to the links-->
 	<nav
 		class="flex items-center justify-center gap-4 rounded-xl
