@@ -23,6 +23,7 @@
 	>
 		<a
 			id="home"
+			aria-label="Home page"
 			class="flex h-10 w-10 items-center justify-center rounded-md
 			{activePage === 'home' ? 'bg-primary shadow-md shadow-primary/25' : ''}
 			transition-all duration-300"
@@ -32,27 +33,19 @@
 			<LampDesk class="h-6 w-6 text-text" />
 		</a>
 		<a
-			id="skills"
+			id="projects"
+			aria-label="Projects page"
 			class="flex h-10 w-10 items-center justify-center rounded-md
-			{activePage === 'skills' ? 'bg-primary shadow-md shadow-primary/25' : ''}
+			{activePage === 'projects' ? 'bg-primary shadow-md shadow-primary/25' : ''}
 			transition-all duration-300"
-			on:click={() => (activePage = 'skills')}
+			on:click={() => (activePage = 'projects')}
 			href="/"
 		>
 			<PanelsTopLeft class="h-6 w-6 text-text" />
 		</a>
 		<a
-			id="work"
-			class="flex h-10 w-10 items-center justify-center rounded-md
-			{activePage === 'work' ? 'bg-primary shadow-md shadow-primary/25' : ''}
-			transition-all duration-300"
-			on:click={() => (activePage = 'work')}
-			href="/"
-		>
-			<Pickaxe class="h-6 w-6 text-text" />
-		</a>
-		<a
 			id="contact"
+			aria-label="Contact page"
 			class="flex h-10 w-10 items-center justify-center rounded-md
 			{activePage === 'contact' ? 'bg-primary shadow-md shadow-primary/25' : ''}
 			transition-all duration-300"
@@ -72,6 +65,7 @@
 	>
 		<a
 			id="github"
+			aria-label="GitHub profile"
 			class="flex h-10 w-10 items-center justify-center rounded-md"
 			href="https://github.com/al-aqua"
 			target="_blank"
@@ -80,6 +74,7 @@
 		</a>
 		<a
 			id="twitter"
+			aria-label="Twitter profile"
 			class="flex h-10 w-10 items-center justify-center rounded-md"
 			href="https://x.com/the_alaqua?t=nXCGbIhHHAOygfJ_vlUh0Q&s=09"
 			target="_blank"
@@ -88,6 +83,7 @@
 		</a>
 		<a
 			id="linkedin"
+			aria-label="LinkedIn profile"
 			class="flex h-10 w-10 items-center justify-center rounded-md"
 			href="https://www.linkedin.com/in/mohammad-al-aqua-b3987b294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 			target="_blank"
@@ -96,6 +92,7 @@
 		</a>
 		<a
 			id="email"
+			aria-label="Email"
 			class="flex h-10 w-10 items-center justify-center rounded-md"
 			href="mailto:reiaqua@gmail.com"
 			target="_blank"
@@ -104,6 +101,7 @@
 		</a>
 		<a
 			id="whatsapp"
+			aria-label="Whatsapp"
 			class="flex h-10 w-10 items-center justify-center rounded-md"
 			href="https://wa.me/qr/I66CWV3QB7DFA1"
 			target="_blank"
