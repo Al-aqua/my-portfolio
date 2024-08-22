@@ -2,7 +2,7 @@
 	import Sl from './sl.svelte';
 </script>
 
-<main class="flex h-full flex-col gap-6 p-6">
+<main class="mt-16 flex h-full flex-col gap-6 p-6 md:mt-24">
 	<div class="flex gap-6">
 		<section
 			class="flex w-fit max-w-xl flex-col rounded-xl
