@@ -8,7 +8,13 @@
 	import Mail from 'lucide-svelte/icons/mail';
 	import MessageCircle from 'lucide-svelte/icons/message-circle';
 	import Phone from 'lucide-svelte/icons/phone';
-	let activePage = 'home';
+	import { activeSection } from './active_store';
+
+	/**@type {string}*/
+	let activePage;
+	activeSection.subscribe((value) => {
+		activePage = value;
+	});
 </script>
 
 <header class="fixed top-0 z-10 h-svh w-svw p-6">
@@ -19,7 +25,7 @@
 			backdrop-blur-lg"
 		>
 			<a
-				id="home"
+				id="home_link"
 				aria-label="Home page"
 				class="flex h-10 w-10 items-center justify-center rounded-md
 				{activePage === 'home' ? 'bg-primary shadow-md shadow-primary/25' : ''}
@@ -30,13 +36,13 @@
 				<LampDesk class="h-6 w-6 text-text" />
 			</a>
 			<a
-				id="projects"
+				id="projects_link"
 				aria-label="Projects page"
 				class="flex h-10 w-10 items-center justify-center rounded-md
 				{activePage === 'projects' ? 'bg-primary shadow-md shadow-primary/25' : ''}
 				transition-all duration-300"
 				on:click={() => (activePage = 'projects')}
-				href="/"
+				href="#projects"
 			>
 				<PanelsTopLeft class="h-6 w-6 text-text" />
 			</a>

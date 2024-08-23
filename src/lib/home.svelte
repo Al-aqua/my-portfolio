@@ -1,8 +1,25 @@
 <script>
 	import Sl from './sl.svelte';
+	import { activeSection } from './active_store.js';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		let observer = new IntersectionObserver(
+			(entrie) => {
+				if (entrie[0].isIntersecting) {
+					console.log('Hi from home');
+					activeSection.set('home');
+				}
+			},
+			{ threshold: 0.9 }
+		);
+
+		// @ts-ignore
+		observer.observe(document.getElementById('home'));
+	});
 </script>
 
-<main class="mt-16 flex h-full flex-col gap-6 p-6 md:mt-24">
+<main id="home" class="mt-16 flex h-full flex-col gap-6 p-6 md:mt-24">
 	<div class="flex gap-6">
 		<section
 			class="flex w-fit max-w-xl flex-col rounded-xl
