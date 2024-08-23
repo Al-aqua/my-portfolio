@@ -17,7 +17,7 @@
 	});
 </script>
 
-<header class="fixed top-0 z-10 h-svh w-svw p-6">
+<header class="fixed top-0 z-10 h-svh w-svw p-6 md:h-fit">
 	<div class="flex h-full w-full flex-col items-center justify-between md:flex-row md:items-start">
 		<nav
 			class="flex items-center justify-center gap-4 rounded-xl
