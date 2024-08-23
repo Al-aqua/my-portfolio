@@ -4,8 +4,11 @@
 
 body {
 	font-family: 'JetBrains Mono', monospace;
-	background-image: url('/background.jpg');
+	background-image: url('/background.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+}
+html {
+	scroll-behavior: smooth;
 }
