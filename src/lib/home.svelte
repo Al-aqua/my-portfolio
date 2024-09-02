@@ -7,7 +7,6 @@
 		let observer = new IntersectionObserver(
 			(entrie) => {
 				if (entrie[0].isIntersecting) {
-					console.log('Hi from home');
 					activeSection.set('home');
 				}
 			},
@@ -19,7 +18,7 @@
 	});
 </script>
 
-<main id="home" class="mt-16 flex h-full flex-col gap-6 p-6 md:mt-24">
+<main id="home" class="mt-16 flex h-full flex-col gap-6 p-6">
 	<div class="flex gap-6">
 		<section
 			class="flex w-fit max-w-xl flex-col rounded-xl
@@ -29,7 +28,7 @@
 			<h1 class="text-xl text-text md:text-3xl">
 				Hey, <span class="whitespace-pre text-accent">I’m Mohammad Al-aqua</span>
 			</h1>
-			<h2 class="text-lg text-primary md:text-xl">Software Engineer and Full Stake Developer</h2>
+			<h2 class="text-lg text-[#b3b0ac] md:text-xl">Software Engineer and Full Stake Developer</h2>
 			<p class="text-sm text-text md:text-lg">
 				I’m a highly skilled developer who always gives his best in everything he does. With over
 				three years of experience in developing and creating quality software, I have led and

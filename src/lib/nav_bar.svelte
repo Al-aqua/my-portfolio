@@ -27,7 +27,7 @@
 			id="home_link"
 			aria-label="Home page"
 			class="flex h-10 w-10 items-center justify-center rounded-md
-				{activePage === 'home' ? 'bg-primary shadow-md shadow-primary/25' : ''}
+				{activePage === 'home' ? 'bg-accent shadow-md shadow-accent/25' : ''}
 				transition-all duration-300"
 			on:click={() => (activePage = 'home')}
 			href="/"
@@ -38,7 +38,7 @@
 			id="projects_link"
 			aria-label="Projects page"
 			class="flex h-10 w-10 items-center justify-center rounded-md
-				{activePage === 'projects' ? 'bg-primary shadow-md shadow-primary/25' : ''}
+				{activePage === 'projects' ? 'bg-accent shadow-md shadow-accent/25' : ''}
 				transition-all duration-300"
 			on:click={() => (activePage = 'projects')}
 			href="#projects"
@@ -46,13 +46,13 @@
 			<PanelsTopLeft class="h-6 w-6 text-text" />
 		</a>
 		<a
-			id="contact"
+			id="contact_link"
 			aria-label="Contact page"
 			class="flex h-10 w-10 items-center justify-center rounded-md
-				{activePage === 'contact' ? 'bg-primary shadow-md shadow-primary/25' : ''}
+				{activePage === 'contact' ? 'bg-accent shadow-md shadow-accent/25' : ''}
 				transition-all duration-300"
 			on:click={() => (activePage = 'contact')}
-			href="/"
+			href="#contact"
 		>
 			<MessageCircleCode class="h-6 w-6 text-text" />
 		</a>
@@ -96,7 +96,7 @@
 			id="email"
 			aria-label="Email"
 			class="flex h-10 w-10 items-center justify-center rounded-md"
-			href="mailto:reiaqua@gmail.com"
+			href="mailto:reiaqua0@gmail.com"
 			target="_blank"
 		>
 			<Mail class="h-6 w-6 text-text" />
